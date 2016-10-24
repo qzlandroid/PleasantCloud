@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_converlist_myself"
+    android:scrollbars="none"
+    >
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       
+  
+   
+        <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+         <EditText  
+   	    		android:background="@drawable/circle_edittext"
+                android:id="@+id/search_et_input"  
+                android:padding="10dp"
+                android:layout_gravity="center_vertical"  
+                android:layout_margin="10dp"  
+                android:drawableLeft="@drawable/chat_search_small_icon"  
+                android:drawablePadding="10dp"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"  
+                android:textSize="12sp"  
+                android:imeOptions="actionSearch"  
+                android:inputType="text"  
+                android:hint="请输入关键字"/> 
+      		
+        
+    </RelativeLayout>
+   
+                
+   	
+   	<RelativeLayout android:layout_width="match_parent"
+   	    android:layout_height="50dp"
+   	    android:background="#fff"
+   	    android:id="@+id/friend_circle_inmessagelist"
+   	     android:layout_marginTop="10dp"
+   	     android:layout_marginBottom="20dp">
+	    <ImageView 
+	        android:id="@+id/img_framer_friend"
+	        android:layout_centerVertical="true"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_marginLeft="10dp"
+	        android:src="@drawable/friend_circle"
+	       />
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dp"
+	        android:text="朋友圈"
+	        android:textSize="15sp"
+	        android:layout_centerVertical="true"
+	        android:textColor="#000"
+	        android:layout_toRightOf="@id/img_framer_friend"/>
+	    
+	    <ImageView 
+	        android:id="@+id/img_framer_right_arrow"
+	        android:layout_centerVertical="true"
+	        android:layout_width="12dp"
+	        android:layout_height="12dp"
+	       	android:layout_marginRight="10dp"
+	       	android:layout_alignParentRight="true"
+	        android:src="@drawable/right_arrow"
+	       />
+	    
+   	    
+   	</RelativeLayout>
+    
+    <fragment
+   android:id="@+id/conversationlist_myself"
+   android:name="io.rong.imkit.fragment.ConversationListFragment"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent" />
+        
+     </LinearLayout>
+</ScrollView>

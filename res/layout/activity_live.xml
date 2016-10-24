@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+	android:orientation="vertical"
+     >
+	 <RelativeLayout 
+	    android:layout_height="50dp"
+	    android:layout_width="match_parent"
+	    android:background="#4BA42F">
+	    <ImageView 
+	        android:id="@+id/live_back"
+	        android:layout_height="20dp"
+	        android:layout_width="10dp"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="20dp"
+	        android:src="@drawable/back_btn"/>
+	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="农业机械"
+	        android:textSize="22sp"
+	        android:textColor="#fff"/>
+	   
+	</RelativeLayout>
+    <io.vov.vitamio.widget.VideoView
+        android:id="@+id/surface_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

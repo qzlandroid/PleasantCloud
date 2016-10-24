@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp" >
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <ImageView 
+        android:id="@+id/home_left_menu_lv_img"
+        android:layout_gravity="center_vertical"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        />
+    <TextView 
+        android:id="@+id/home_left_menu_lv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="农事天气"
+        android:textSize="22sp"
+        android:textColor="#fff"
+        android:layout_marginLeft="10dp"/>
+	</LinearLayout>
+    
+ 
+</LinearLayout>

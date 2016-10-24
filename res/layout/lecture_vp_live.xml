@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <ListView 
+        android:id="@+id/lecture_live_lv"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:divider="@android:color/transparent"
+	    android:listSelector="@android:color/transparent"/>
+    <!-- <cn.jinke.peasantcloud.view.MyGridView
+        android:id="@+id/lecture_live_gv"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:horizontalSpacing="0.0dip"
+        android:listSelector="@null"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="0dp"/> -->
+  <!--  <io.vov.vitamio.widget.VideoView
+        android:id="@+id/surface_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" /> -->
+    
+
+</LinearLayout>

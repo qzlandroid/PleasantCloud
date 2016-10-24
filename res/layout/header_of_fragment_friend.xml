@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <!--  <io.rong.imkit.widget.AsyncImageView
+      android:id="@+id/rc_img"
+      android:layout_width="300dp"
+      android:layout_height="300dp"
+      android:layout_gravity="center"
+      android:layout_marginLeft="20dp"
+      app:RCCornerRadius="3dp"
+      app:RCDefDrawable="@drawable/header"
+      app:RCShape="square" /> -->
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+         <EditText  
+   	    		android:background="@drawable/circle_edittext"
+                android:id="@+id/search_et_input"  
+                android:padding="10dp"
+                android:layout_gravity="center_vertical"  
+                android:layout_margin="10dp"  
+                android:drawableLeft="@drawable/chat_search_small_icon"  
+                android:drawablePadding="10dp"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"  
+                android:textSize="12sp"  
+                android:imeOptions="actionSearch"  
+                android:inputType="text"  
+                android:hint="请输入关键字"/> 
+      		
+        
+    </RelativeLayout>
+   
+                
+   	
+   	<RelativeLayout android:layout_width="match_parent"
+   	    android:layout_height="50dp"
+   	    android:background="#fff"
+   	    android:id="@+id/rl_farmer_friend_circle"
+   	     android:layout_marginTop="10dp"
+   	     android:layout_marginBottom="20dp">
+	    <ImageView 
+	        android:id="@+id/img_framer_friend"
+	        android:layout_centerVertical="true"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_marginLeft="10dp"
+	        android:src="@drawable/chat_group_icon"
+	       />
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dp"
+	        android:text="群组"
+	        android:textSize="15sp"
+	        android:layout_centerVertical="true"
+	        android:textColor="#000"
+	        android:layout_toRightOf="@id/img_framer_friend"/>
+	    
+	    <ImageView 
+	        android:id="@+id/img_framer_right_arrow"
+	        android:layout_centerVertical="true"
+	        android:layout_width="12dp"
+	        android:layout_height="12dp"
+	       	android:layout_marginRight="10dp"
+	       	android:layout_alignParentRight="true"
+	        android:src="@drawable/right_arrow"
+	       />
+	    
+   	    
+   	</RelativeLayout>
+
+</LinearLayout>

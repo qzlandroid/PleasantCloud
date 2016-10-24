@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    android:orientation="vertical" >
+    
+    	<RelativeLayout 
+   	    android:layout_width="match_parent"
+   	    android:layout_height="60dp"
+   	    android:background="#fff"
+   	     android:id="@+id/ll_friend_chatlist"
+   	     >
+	    
+	
+	        <io.rong.imkit.widget.AsyncImageView
+            android:id="@+id/friend_list_headimg"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            
+             android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            app:RCCornerRadius="3dp"
+            app:RCDefDrawable="@drawable/header"
+            app:RCShape="square" />
+	 
+	   <!--   <com.makeramen.roundedimageview.RoundedImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imageView1"
+         android:layout_width="48dp"
+            android:layout_height="48dp"
+             android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+        android:src="@drawable/header"
+        android:scaleType="centerCrop"
+        app:riv_oval="false"
+        app:riv_corner_radius="3dip"
+        app:riv_mutate_background="true"
+        app:riv_tile_mode="repeat"
+         /> -->
+	    
+	         <TextView 
+	          android:layout_centerVertical="true"
+	         android:layout_toRightOf="@id/friend_list_headimg"
+	         android:layout_marginLeft="20dp"
+	         android:id="@+id/friend_list_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:text="李志"
+	        android:textSize="15sp"
+	        android:layout_marginTop="10dp"
+	        android:textColor="#000"
+	        />
+	         
+	 
+   	    
+   	</RelativeLayout>
+
+</LinearLayout>

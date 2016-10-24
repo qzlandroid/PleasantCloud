@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.jinke.peasantcloud"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取机型信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 百度地图 -->
+    
+    
+    <uses-permission android:name="android.permission.GET_TASKS" />
+ <uses-permission android:name="android.permission.INTERNET" />
+ <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+ <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+ <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+ <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+ <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+ <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+ <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+ <!-- 蓝牙分享所需的权限 -->
+  <uses-permission android:name="android.permission.BLUETOOTH" />
+  <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+
+    <!--
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    -->
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:name="cn.jinke.peasantcloud.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:protectionLevel="signature"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="cn.jinke.peasantcloud.activity.SplashIndexActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.jinke.peasantcloud.activity.MainActivity"
+            android:theme="@style/Theme.PageIndicatorDefaults" >
+        </activity>
+        <activity
+            android:name="cn.jinke.peasantcloud.activity.AddFarmerFriendActivity"
+            android:label="@string/title_activity_add_farmer_friend"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.jinke.peasantcloud.activity.FarmerFriendCircleActivity"
+            android:label="@string/title_activity_farmer_friend_circle"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.jinke.peasantcloud.activity.ConversationActivity"
+            android:label="@string/title_activity_conversation"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="cn.jinke.peasantcloud"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.jinke.peasantcloud.activity.FriendInfoActivity"
+            android:label="@string/title_activity_friend_info"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.jinke.peasantcloud.activity.GroupInfoActivity"
+            android:label="@string/title_activity_group_info"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.jinke.peasantcloud.activity.HomeSearchActivity"
+            android:label="@string/title_activity_home_search"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="io.rong.imkit.activity.PictureSelectorActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="io.rong.imkit.activity.PicturePagerActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="io.rong.imkit.activity.PicturePreviewActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.jinke.peasantcloud.activity.PictureSelectorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="cn.jinke.peasantcloud.activity.PicturePreviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.jinke.peasantcloud.tools.RongWebviewActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="io.rong.imkit.intent.action.webview" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.jinke.peasantcloud.widget.provider.TakingPicturesActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.jinke.peasantcloud.activity.PicturePagerActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        
+        
+        
+        
+        
+        <!-- SHARE SDK -->
+<activity
+android:name="com.mob.tools.MobUIShell"
+android:theme="@android:style/Theme.Translucent.NoTitleBar"
+android:configChanges="keyboardHidden|orientation"
+android:screenOrientation="portrait"
+android:windowSoftInputMode="stateHidden|adjustResize" >
+<!--
+AuthorizeAdapter继承自
+cn.sharesdk.framework. authorize.AuthorizeAdapter，
+可以监听到页面的生命周期，也能获取页面的各种UI控件。
+开发者可以通过继承AuthorizeAdapter，重写其方法，
+并获取各种UI来自定义这个页面的行为。
+-->
+<meta-data android:name="AuthorizeAdapter"
+android:value="cn.sharesdk.demo.MyAdapter" />
+</activity>
+ 
+        <!--微信分享回调 -->
+ <activity
+     android:name=".wxapi.WXEntryActivity"
+     android:theme="@android:style/Theme.Translucent.NoTitleBar"
+     android:configChanges="keyboardHidden|orientation|screenSize"
+     android:exported="true"
+     android:screenOrientation="portrait" /> 
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <!-- 必选： SDK 核心功能 -->
+        <service
+            android:name="io.rong.push.core.PushRegistrationService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="io.rong.push.PushService"
+            android:exported="false"
+            android:process="io.rong.push" >
+        </service>
+        <service
+            android:name="io.rong.push.core.MessageHandleService"
+            android:exported="true" >
+        </service>
+
+        <receiver
+            android:name="io.rong.push.PushReceiver"
+            android:process="io.rong.push" >
+            <intent-filter>
+                <action android:name="io.rong.push.intent.action.HEART_BEAT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 必选： SDK 核心功能 -->
+
+
+        <!-- end -->
+
+
+        <!-- imlib config begin -->
+        <meta-data
+            android:name="RONG_CLOUD_APP_KEY"
+            android:value="e5t4ouvpttb0a" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="xdNwPGCFktbxEaOrTa0Qk4YXKjI35OXz" />
+
+        <service
+            android:name="io.rong.imlib.ipc.RongService"
+            android:exported="true"
+            android:process=":ipc" />
+        <service android:name="io.rong.imlib.ReConnectService" />
+
+        <receiver android:name="io.rong.imlib.ConnectChangeReceiver" />
+        <receiver
+            android:name="io.rong.imlib.HeartbeatReceiver"
+            android:process=":ipc" />
+
+        <meta-data
+            android:name="RONG_CLOUD_APP_KEY"
+            android:value="e5t4ouvpttb0a" />
+        <!-- end -->
+
+        <activity
+            android:name="cn.jinke.peasantcloud.activity.VideoContentActivity"
+            android:label="@string/title_activity_video_content"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.jinke.peasantcloud.activity.LiveActivity"
+            android:label="@string/title_activity_live"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="io.vov.vitamio.activity.InitActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="cn.jinke.peasantcloud.activity.WorkPlanActivity"
+            android:label="@string/title_activity_work_plan"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.jinke.peasantcloud.activity.MapRouteActivity"
+            android:label="@string/title_activity_map_route_activity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+
+        <receiver
+            android:name="cn.jinke.peasantcloud.receiver.MessageReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="io.rong.push.intent.MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MESSAGE_CLICKED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_CLICKED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="cn.jinke.peasantcloud.activity.PushDealActivity"
+            android:label="@string/title_activity_push_deal"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="cn.jinke.peasantcloud.activity.ExpertActivity"
+            android:label="@string/title_activity_expert"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="cn.jinke.peasantcloud.activity.ExpertInfoActivity"
+            android:label="@string/title_activity_expert_info"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        
+        <activity
+            android:name="cn.jinke.peasantcloud.activity.LoginActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PeasantCloud</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_add_farmer_friend">AddFarmerFriendActivity</string>
+    <string name="title_activity_farmer_friend_circle">FarmerFriendCircleActivity</string>
+    <string name="title_activity_conversation">ConversationActivity</string>
+    <string name="title_activity_friend_info">FriendInfoActivity</string>
+    <string name="title_activity_group_info">GroupInfoActivity</string>
+    <string name="title_activity_home_search">HomeSearchActivity</string>
+    <string name="title_activity_video_content">VideoContentActivity</string>
+    <string name="location">位置</string>
+    <string name="send_location">发送位置</string>
+    <string name="real_time_location_sharing">实时位置共享</string>
+    <string name="add_contacts">通讯录</string>
+    <string name="title_activity_live">LiveActivity</string>
+    <string name="title_activity_work_plan">WorkPlanActivity</string>
+    <string name="title_activity_map_route_activity">MapRouteActivityActivity</string>
+
+    <!-- 对话框所需要的字符串资源 -->
+    <string name="dialog_message">该项工作已完成？</string>
+    <string name="postive_button">确定</string>
+    <string name="negative_button">取消</string>
+    <string name="title_activity_push_deal">PushDealActivity</string>
+    <string name="title_activity_splash_index">SplashIndexActivity</string>
+    <string name="title_activity_scanner">ScannerActivity</string>
+    <string name="title_activity_expert">ExpertActivity</string>
+    <string name="title_activity_expert_info">ExpertInfoActivity</string>
+
+</resources>

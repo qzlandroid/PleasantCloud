@@ -1,0 +1,180 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FriendInfoActivity" >
+   
+    <RelativeLayout 
+	    android:layout_height="50dp"
+	    android:layout_width="match_parent"
+	    android:background="#4BA42F">
+	   <RelativeLayout 
+	        android:id="@+id/back_btn_friendinfo"
+	        android:layout_height="50dp"
+	        android:layout_width="50dp">
+	        <ImageView 
+	        
+	        android:layout_height="20dp"
+	        android:layout_width="10dp"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="20dp"
+	        android:src="@drawable/back_btn"/>
+	    </RelativeLayout>
+	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="详情"
+	        android:textSize="22sp"
+	        android:textColor="#fff"/>
+	   
+	</RelativeLayout>
+	
+     <LinearLayout
+        android:background="#fff" 
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <cn.jinke.peasantcloud.view.CircularImage 
+	        android:id="@+id/friend_list_headimg"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginLeft="20dp"
+	        android:layout_width="30dp"  
+	        android:layout_height="30dp"  
+	        android:src="@drawable/header"/>
+        
+        <ImageView
+	        android:id="@+id/friend_info_plus"
+	       android:layout_gravity="center_vertical"  
+	        android:layout_marginLeft="10dp"
+	        android:layout_width="30dp"  
+	        android:layout_height="30dp"  
+	        android:src="@drawable/chat_toolbar_right_add"/>
+        
+    </LinearLayout>
+    
+
+   <RelativeLayout
+       android:background="#fff"
+       android:layout_marginTop="10dp"
+       android:layout_height="40dp"
+       android:layout_width="match_parent">
+       <TextView 
+           android:layout_centerVertical="true"
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content" 
+       android:text="备注名"
+       android:textSize="15sp"
+       android:layout_marginLeft="15dp"
+           />
+       
+       <TextView 
+       android:layout_centerVertical="true"
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content" 
+       android:text="李志"
+       android:drawableRight="@drawable/right_arrow"
+       android:textSize="15sp"
+       android:drawablePadding="5dp"
+       android:layout_alignParentRight="true"
+       android:layout_marginRight="20dp"
+           />
+   </RelativeLayout>
+   <!-- 电话信息 -->
+   <RelativeLayout
+       android:background="#fff"
+        android:layout_marginTop="1dp"
+       android:layout_height="40dp"
+       android:layout_width="match_parent">
+       <TextView 
+           android:layout_centerVertical="true"
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content" 
+       android:text="手机号码"
+       android:textSize="15sp"
+       android:layout_marginLeft="15dp"
+           />
+       
+       <TextView 
+       android:layout_centerVertical="true"
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content" 
+       android:text="13223459104"
+       android:textSize="15sp"
+       android:layout_alignParentRight="true"
+       android:layout_marginRight="20dp"
+           />
+   </RelativeLayout>
+   
+   <!--二维码  -->
+   <RelativeLayout
+       android:background="#fff"
+        android:layout_marginTop="1dp"
+       android:layout_height="40dp"
+       android:layout_width="match_parent">
+       <TextView 
+           android:layout_centerVertical="true"
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content" 
+       android:text="二维码"
+       android:textSize="15sp"
+       android:layout_marginLeft="15dp"
+           />
+       
+       <TextView 
+       android:layout_centerVertical="true"
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content" 
+       android:text=""
+       android:drawableRight="@drawable/right_arrow"
+       android:textSize="15sp"
+       android:drawablePadding="5dp"
+       android:layout_alignParentRight="true"
+       android:layout_marginRight="20dp"
+           />
+   </RelativeLayout>
+   
+   <!--聊天文件  -->
+   <RelativeLayout
+       android:background="#fff"
+       android:layout_marginTop="1dp"
+       android:layout_height="40dp"
+       android:layout_width="match_parent">
+       <TextView 
+           android:layout_centerVertical="true"
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content" 
+       android:text="聊天文件"
+       android:textSize="15sp"
+       android:layout_marginLeft="15dp"
+           />
+       
+       <TextView 
+       android:layout_centerVertical="true"
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content" 
+       android:text=""
+       android:drawableRight="@drawable/right_arrow"
+       android:textSize="15sp"
+       android:drawablePadding="5dp"
+       android:layout_alignParentRight="true"
+       android:layout_marginRight="20dp"
+           />
+   </RelativeLayout>
+   <LinearLayout 
+       android:layout_marginTop="20dp"
+       android:layout_width="match_parent"
+       android:layout_height="50dp">
+       <Button 
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_marginLeft="50dp"
+       android:layout_marginRight="50dp"
+       android:background="@drawable/button_circle"
+       android:text="删除"/>
+   </LinearLayout>
+  
+
+</LinearLayout>

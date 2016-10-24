@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+	    android:layout_height="50dp"
+	    android:layout_width="match_parent"
+	    android:background="#4BA42F">
+	    <ImageView 
+	        android:id="@+id/store_img_user"
+	        android:layout_height="25dp"
+	        android:layout_width="20dp"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="20dp"
+	        android:src="@drawable/home_left_user"/>
+	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="农资商城"
+	        android:textSize="22sp"
+	        android:textColor="#fff"/>  
+        <ImageView 
+	        android:id="@+id/store_img_search"
+	        android:layout_height="20dp"
+	        android:layout_width="20dp"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="20dp"
+	        android:src="@drawable/home_right_search"/>
+	</RelativeLayout>
+	<ListView 
+        android:id="@+id/store_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#D3D3D3"
+        android:dividerHeight="0.5dp"
+	    android:listSelector="@android:color/transparent">
+    </ListView>
+    
+
+</LinearLayout>

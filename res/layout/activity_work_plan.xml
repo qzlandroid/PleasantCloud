@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical"
+	
+     >
+	 <RelativeLayout 
+	    android:layout_height="50dp"
+	    android:layout_width="match_parent"
+	    android:background="#4BA42F">
+	    <ImageView 
+	        android:id="@+id/workplan_back"
+	        android:layout_height="20dp"
+	        android:layout_width="10dp"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="20dp"
+	        android:src="@drawable/back_btn"/>
+	    <TextView 
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:text="待办事项"
+	        android:textSize="22sp"
+	        android:textColor="#fff"/>
+	   
+	</RelativeLayout>
+	
+	<ListView 
+	    android:id="@+id/workplan_todo"
+	   	android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+	    android:listSelector="@android:color/transparent"/>
+	
+	<LinearLayout
+	     android:layout_width="match_parent"
+         android:layout_height="75dp"
+         android:textColor="#696969">
+	   <TextView 
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:layout_marginTop="35dp"
+		        android:layout_marginLeft="15dp"  
+		        android:text="已完成"
+		        android:textColor="#A9A9A9"
+		        android:textSize="18sp"/>
+	</LinearLayout>
+	
+	<ListView 
+	    android:id="@+id/workplan_done"
+	   	android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+	    android:listSelector="@android:color/transparent"/>
+	
+  
+   </LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#F5F4F9" >
+
+        <TextView
+            android:id="@+id/tv_expert_category"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" 
+            android:text="省级专家"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+    <cn.jinke.peasantcloud.view.MyListView
+        android:id="@+id/expert_lv2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#D3D3D3"
+        android:dividerHeight="0.5dp"
+	    android:listSelector="@android:color/transparent"/>
+</LinearLayout>

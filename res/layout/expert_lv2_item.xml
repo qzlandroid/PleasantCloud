@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:gravity="center_vertical" >
+
+    <cn.jinke.peasantcloud.view.CircularImage
+        android:id="@+id/expert_lv_header"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/header1" />
+    <LinearLayout 
+        android:layout_toRightOf="@id/expert_lv_header"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="专家老刘"
+            android:textColor="#696969"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手把手教你如何保证玉米高产"
+            android:textColor="#A9A9A9"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="3dp"
+            android:textSize="14sp"/>
+    </LinearLayout>
+    <ImageView 
+        android:id="@+id/expert_lv_follow"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/expert_follow_hor" />
+
+</RelativeLayout>

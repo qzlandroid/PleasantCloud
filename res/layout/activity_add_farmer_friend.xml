@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f4f9"
+    android:orientation="vertical"
+    tools:context=".AddFarmerFriendActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#4BA42F" >
+
+        <RelativeLayout
+            android:id="@+id/back_btn_addfriend"
+            android:layout_width="50dp"
+            android:layout_height="50dp" >
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/back_btn" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="添加农友"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+  
+
+    <ListView
+        android:id="@+id/lv_recommended"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#f5f4f9"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+</LinearLayout>

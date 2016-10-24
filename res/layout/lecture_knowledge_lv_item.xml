@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View 
+        android:id="@+id/lecture_view"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#F5F5F5"/>
+    <TextView 
+        android:id="@+id/lecture_tv_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:text="作物"
+        android:textSize="15sp"
+        android:textColor="@color/colorMain"
+        android:gravity="center"/>
+    <cn.jinke.peasantcloud.view.MyGridView
+        android:id="@+id/lecture_knowledge_gv"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:horizontalSpacing="0.0dip"
+        android:listSelector="@null"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="0dp"/>
+        
+   
+
+</LinearLayout>

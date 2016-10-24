@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPressed">#4BA42F</color>
+    <color name="colorMain">#4BA42F</color>
+    <color name="colorNormal">#A2A8B4</color>
+    <color name="griditems_bg">#ffe8ecef</color>
+    <color name="commo_text_color">#ff333333</color>
+    <color name="line">#DCDCDC</color>
+     <color name="dialog_white_bg">#fbfbfb</color>
+    <color name="view_normal">#D8D7DA</color>
+</resources>
